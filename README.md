@@ -106,4 +106,4 @@ resource "aws_dynamodb_table" "funtimes" {
 Once you get the hang of this, one thing you can try is to clone this repo twice.  Then, you can play around with running one command from one repo and another command from another repo.  Everything should work fine with no conflicts and nothing getting out of sync.
 
 # Further Reading
-This project is simply a way to help you get something out there quickly, but there's much more you can get into.  Make sure to checkout the Terraform documentation which will go into these concepts in more detail.  You can start [here](https://learn.hashicorp.com/terraform/tfc/tfc_migration).
+This project is simply a way to help you get something out there quickly and cleanly, but there's much more you can get into.  Make sure to checkout the Terraform documentation which will go into these concepts in more detail.  You can start [here](https://learn.hashicorp.com/terraform/tfc/tfc_migration).
