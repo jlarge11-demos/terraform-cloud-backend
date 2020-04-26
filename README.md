@@ -1,4 +1,4 @@
-# terraform-cloud-backend
+# Introduction
 This project is a quick demo of the usage of Terraform Cloud as a backend.  The intent is to have a lightweight project that can help you put something (anything) on AWS quickly while managing it all with Terraform config using Terraform Cloud as a backend.
 
 # Why Use a Remote Backend?
