@@ -101,3 +101,6 @@ resource "aws_dynamodb_table" "funtimes" {
 ### Teardown
 * To tear down the AWS infrastructure, simply run `terraform destroy`.
 * You can tear down the organization in Terraform Cloud by clicking Settings and then Delete Organization.
+
+# Optional - Simulating a Team
+Once you get the hang of this, one thing you can try is to clone this repo twice.  Then, you can play around with running one command from one repo and another command from another repo.  Everything should work fine with no conflicts and nothing getting out of sync.
