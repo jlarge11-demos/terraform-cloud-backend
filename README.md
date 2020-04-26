@@ -90,7 +90,7 @@ resource "aws_dynamodb_table" "funtimes" {
 * Under the Organization dropdown, click "Create New Organization".  Organization Name will be `sleepy-hypatia`.
 * It will ask you to connect to a Version Control Provider.  I skipped this by selecting No VCS Connection.  I haven't explored Version Control Providers, but for the time being, I'm content to run my Terraform commands from my local machine.
 * Workspace Name is a little tricky.  You need to combine the prefix you have in the remote config above (`main-`) with the local workspace name we want to start with (we'll go with `dev`).  For this example, the Workspace Name will be `main-dev`.
-* Go into `main-dev` and then click Configure variables.  Under the Terraform Variables section, add the `aws_access_key_id` and `aws_secret_access_key` of the IAM user that will build these components.  Make sure to mark both variables as secret.
+* Go into `main-dev` and then click Configure variables.  Under the Terraform Variables section, add the `aws_access_key_id` and `aws_secret_access_key` of the IAM user that will build these components.  Make sure to mark both variables as sensitive.
 
 ### Running the Terraform Commands
 * Back at your terminal, go to the folder that contains your Terraform config.
