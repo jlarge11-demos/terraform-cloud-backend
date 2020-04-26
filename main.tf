@@ -1,14 +1,6 @@
 variable "aws_access_key_id" {}
 variable "aws_secret_access_key" {}
 
-locals {
-  site_name = "www.dailywombat.com"
-
-  tags = {
-    site = "dailywombat"
-  }
-}
-
 provider "aws" {
   access_key = var.aws_access_key_id
   secret_key = var.aws_secret_access_key
@@ -17,10 +9,10 @@ provider "aws" {
 
 terraform {
   backend "remote" {
-    organization = "dailywombat"
-    
+    organization = "jlarge11-terraform-cloud-backend"
+
     workspaces {
-      prefix = "site-"
+      prefix = "main-"
     }
   }
 }
@@ -35,6 +27,4 @@ resource "aws_dynamodb_table" "funtimes" {
     name = "alpha"
     type = "S"
   }
-
-  tags = local.tags
 }
